@@ -1,4 +1,4 @@
-import time
+import time, random
 
 def pause(num):
     """Pauses the program for a given amount of time"""
@@ -17,7 +17,7 @@ pronouns = ['he/him/his', "she/her/hers", "it/its", "fleur/fleurs",
 "they/them/theirs", "fae/faer/faers", "fey/fem/feirs"]
 
 line("Greetings!")
-line("AIvery 0.0.0.2 loaded.")
+line("AIvery 0.0.0.3 loaded.")
 line("Please enter your name.")
 username = input(">>> ")
 line(f"Is {username} your name?")
@@ -67,6 +67,17 @@ while True:
     if "what is your gender" in query.lower() or "what gender or you" in query.lower():
         line("I, AIvery, am above your human concept of gender.")
         line("For ease of use, however, I use the pronouns they/them.")
+
+    elif "how are you" in query.lower():
+        outcome = random.randint(0, 99)
+        if outcome == 67:
+            line("As an AI, I do not have emotions.")
+            line("Was that a good joke?")
+            line("I apologise, I shall consider deactivating or"
+            " upgrading my humour module.")
+        else:
+            line(f"I am doing good! Thank you for asking!")
+
     else:
         line(f"I am afraid I do not understand, {username}")
         line("Please try wording the query differently, or checking the list"
