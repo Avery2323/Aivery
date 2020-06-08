@@ -17,7 +17,7 @@ pronouns = ['he/him/his', "she/her/hers", "it/its", "fleur/fleurs",
 "they/them/theirs", "fae/faer/faers", "fey/fem/feirs"]
 
 line("Greetings!")
-line("AIvery 0.0.0.4 loaded.")
+line("AIvery 0.0.0 loaded.")
 line("Please enter your name.")
 username = input(">>> ")
 line(f"Is {username} your name?")
